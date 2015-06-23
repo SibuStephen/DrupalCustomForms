@@ -1,0 +1,5 @@
+name = Sibu's module
+description = My Module as such
+package = Module Building
+core = 7.x
+files[]= sibumodule.module

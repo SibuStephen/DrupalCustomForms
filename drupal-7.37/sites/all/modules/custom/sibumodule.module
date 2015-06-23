@@ -1,0 +1,85 @@
+ <?php
+
+
+function sibumodule_menu() {
+
+$items['scroll'] = array (
+    'title' => 'Access the arguments',
+    'access callback' => TRUE,
+    'page callback' => 'retweet1',
+    'type' => MENU_LOCAL_ACTION
+);
+
+$items['scroll/tab1'] = array(
+  'title' => 'Tab 1',
+  'page callback' => 'retweet2',
+  'access callback' => TRUE,
+  'type' => MENU_DEFAULT_LOCAL_TASK
+  // Access callback, page callback, and theme callback will be inherited
+  // from 'admin/config/system/foo', if not specified here to override.
+);
+// Make an additional tab called "Tab 2" on "Foo settings"
+$items['scroll/tab2'] = array(
+  'title' => 'Tab 2',
+  'access callback' => TRUE,
+  'page callback' => 'retweet3',
+  'type' => MENU_NORMAL_ITEM
+);
+
+$items['scroll/tab3'] = array(
+  'title' => 'Tab 3 accessed',
+  // 'access callback' => 'user_access',
+  'access arguments' => array('arguments_such'),
+  'page callback' => 'retweet4',
+  'type' => MENU_DEFAULT_LOCAL_TASK
+);
+
+return $items;
+}
+
+
+// function user_has_role() {
+    
+//     if (user_is_logged_in()) {
+//         global $user;
+//         foreach ($roles as $role) {
+            
+//             if (in_array($role, $user->roles)) {
+//                 return TRUE;
+//             }
+//         }
+//     }
+//     else {
+//         return FALSE;
+//     }
+// }
+
+function retweet1() {
+	return ("Hello bro watsapp on Facebook ?");
+	// image: url('/');
+}
+
+	function retweet2() {
+	return ("Hello bro watsapp on FB ?");
+	// image: url('/');
+}
+function retweet3() {
+	return ("Hello bro watsapp on Twitter ?");
+	// image: url('/');
+}
+
+function retweet4() {
+	return ("Hello bro watsapp on Pinterest ?");
+
+}
+
+function sibumodule_permission() {
+
+return array(
+'arguments_such' => array(
+'title' => t('access arguments'),
+'description' => t('Allow users to access this page prior that he ,she has the rights todo so'),
+
+),
+);
+}

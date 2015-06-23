@@ -1,0 +1,30 @@
+<?php
+
+function anothermodule_menu() 
+{
+
+$items['anotherscroll/tab3'] = array(
+  'title' => 'Tab 3 accessed',
+  'access_arguments' => array('arguments_such'),
+  'page callback' => 'retweet4',
+  'type' => MENU_NORMAL_ITEM
+  
+);
+
+return $items;
+}
+
+function retweet4() {
+	return ("Hello bro watsapp on Pinterest ?");
+	// image: url('/');
+}
+
+function anothermodule_permission()
+{
+
+return array(
+'arguments_such' => array(
+'title' => t('access arguments'),
+'description' => t('Allow users to access this page prior that he ,she has the rights todo so'),
+),
+);

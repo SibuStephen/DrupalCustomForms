@@ -1,0 +1,5 @@
+
+Name = contactdb
+description = Contact form schema
+package = schema Building
+core = 7.x

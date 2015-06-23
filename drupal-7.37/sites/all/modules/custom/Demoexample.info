@@ -1,0 +1,5 @@
+name = Demoexample
+description = "Drupal 7 Example Module"
+package = schema examples
+core = 7.x 
+files[]= Demoexample.module

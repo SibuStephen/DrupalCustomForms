@@ -1,0 +1,173 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+
+
+
+/*Custom css*/
+
+/*Gallery Block*/
+
+#block-views-gallery-block .views-view-grid {
+  margin: 0 auto 0 auto;
+}
+
+#content table .views-field-field-images img {
+ 
+ background-image: url(../images/stack_bg.png);
+ padding: 20px;
+ background-size: 275px 275px;
+ margin: 0px 15px 0px 15px;
+}
+
+/*front page Block*/
+
+#block-views-gallery-block.views-field {
+  text-align: center;
+}
+
+.views-slideshow-cycle-main-frame-row .field-content {
+
+color: #0ff !important;
+height: auto !important;
+
+}
+
+#block-views-front-page-events-block-1 h2.block__title.block-title {
+
+	text-align: center;
+}
+
+#block-twitter-block-1 h2.block__title.block-title  {
+
+text-align: center;
+background-color: white;
+margin-bottom: -1%;
+border-radius: 6%;
+
+}
+
+
+#block-views-recent-post-block-1 h2.block__title.block-title  {
+     text-align:center;
+}
+
+/*.region.region-content .contextual-links-region {
+
+max-width: 40% !important;
+float: left !important;
+width: 33% !important;
+
+}*/
+
+#block-twitter-block-1 {
+
+float: left;
+width: 30% !important;
+max-width: 30% !important;
+
+}
+
+#block-views-front-page-events-block-1 {
+
+width: 30%;
+float: left;
+background-color: white;
+margin-left: 2%;
+border-radius: 5%;
+}
+
+#block-views-recent-post-block-1 {
+width: 30%;
+float: left;
+background-color: white;
+margin-left: 2%;
+border-radius: 5%;
+}
+
+ul.links.inline.clearfix a {
+
+text-decoration: none !important;
+font-size: 1.5em;
+color: chocolate;
+
+}
+
+ul.links.inline.clearfix li {
+
+margin-left: 11em;
+margin-top: 1em;
+
+}
+
+body {
+ background-color: beige;
+}
+
+#main {
+ background-color: #008080;
+}
+
+#header, #footer {
+
+background-color: #696969;
+
+}
+
+#navigation {
+
+background-color :rgb(118, 173, 189);
+
+}
+
+/*Recent post Design*/
+
+.view.view-front-page-events span.field-content {
+  color: blue;
+}
+
+span.views-field.views-field-body {
+display: inline-block;
+margin-left: 7em;
+}
+
+/*.views-field.views-field-picture {
+position: absolute;
+}*/
+
+span.views-field.views-field-created {
+font-weight: bold;
+border-bottom-style: double;
+border-bottom-width: thin;
+}
+
+#views_slideshow_cycle_div_slider-page_1_1  img{
+margin-left: 6em;
+}
+
+.view.view-slider.view-id-slider.view-display-id-page_1.view-dom-id-cdab530edb20942d56f8bd3c7a5a9f6d {	
+ margin-left: 5em;
+}
+.views-field.views-field-field-event-name .field-content {
+ font-weight: bold;
+ color: blue;
+}

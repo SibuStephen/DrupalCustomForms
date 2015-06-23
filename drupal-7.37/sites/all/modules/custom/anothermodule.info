@@ -1,0 +1,5 @@
+name= anothermodule
+description = another module to verify the menu types
+package = Module Building
+core = 7.x
+files = anothermodule.module

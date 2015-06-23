@@ -1,0 +1,21 @@
+<?php
+
+function Demoexample_schema() {
+  $schema['demo_schema'] = array(
+    'description' => 'D7 Example Table',
+    'fields' => array(
+      'pid' => array(
+        'description' => 'Primary ID',
+        'type' => 'serial',
+        'not null' => TRUE,
+      ),
+      'name' => array(
+        'description' => 'D7 Example Table Name',
+        'type' => 'text',
+        'not null' => TRUE,
+      ),
+    ),
+    'primary key' => array('pid'),
+  );
+  return $schema;
+}
